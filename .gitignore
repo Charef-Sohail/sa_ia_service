@@ -1,0 +1,18 @@
+# Environnements virtuels (très lourd !)
+venv/
+.venv/
+env/
+
+# Fichiers compilés par Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Variables d'environnement (Sécurité)
+.env
+.env.*
+
+# Logs et bases locales
+*.log
+*.sqlite3

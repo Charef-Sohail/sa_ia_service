@@ -1,0 +1,11 @@
+# Le framework API ultra-rapide
+fastapi==0.110.0
+
+# Le serveur web pour faire tourner FastAPI
+uvicorn==0.29.0
+
+# Pour valider les données JSON reçues de Spring Boot
+pydantic==2.6.4
+
+# Le cœur de votre intelligence (Google OR-Tools pour le planning)
+ortools==9.9.3963
