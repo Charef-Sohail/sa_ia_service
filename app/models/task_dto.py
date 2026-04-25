@@ -1,5 +1,5 @@
-from pydantic import BaseModel
-from typing import List
+from pydantic import BaseModel, Field
+from typing import List, Optional
 from datetime import datetime
 
 class TaskDTO(BaseModel):
@@ -9,6 +9,10 @@ class TaskDTO(BaseModel):
     difficulty: int
     priority: str
     deadline: datetime
+    # --- NOUVEAUX CHAMPS POUR LES COURS FIXES ---
+    # alias="isFixed" permet à Python de lire le JSON de Java correctement
+    is_fixed: bool = Field(default=False, alias="isFixed") 
+    start_time: Optional[str] = Field(default=None, alias="startTime")
 
 class StudentProfileDTO(BaseModel):
     student_id: str
