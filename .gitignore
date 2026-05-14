@@ -11,8 +11,10 @@ __pycache__/
 
 # Variables d'environnement (Sécurité)
 .env
-.env.*
 
 # Logs et bases locales
 *.log
 *.sqlite3
+
+# Node.js
+node_modules/
